@@ -66,13 +66,6 @@
                 "description": "Size of the boss JMeter node"
             }
         },
-        "jarball": {
-            "type": "string",
-            "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elasticsearch-jmeter/resources/jarball.zip",
-            "metadata": {
-                "description": "The location of the test library and jar dependencies. This is extracted to every node under /opt/jmeter/apache-jmeter-2.13/lib/junit"
-            }
-        },
         "testpack": {
             "type": "string",
             "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elasticsearch-jmeter/resources/testpack.zip",
