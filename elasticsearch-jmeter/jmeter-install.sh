@@ -166,7 +166,7 @@ update_config_boss()
     
     
 }
-
+ 
 install_jmeter()
 {
     log "Installing JMeter"
@@ -182,7 +182,7 @@ install_jmeter()
     wget -O /opt/jmeter/apache-jmeter-5.0/lib/ext/jmeter-plugins-manager-1.3.jar https://jmeter-plugins.org/get/
     
     log "getting test plan"
-    wget -O /opt/jmeter/RNB_POP_preprod_JMeter_ChromeDriver.jmx https://raw.githubusercontent.com/awadensten/jmeter-cloud-run/master/elasticsearch-jmeter/resources/fiddle.jmx
+    wget -O /opt/jmeter/testplan.jmx https://raw.githubusercontent.com/awadensten/jmeter-cloud-run/master/elasticsearch-jmeter/resources/fiddle.jmx
     
     log "installing plugins"
     wget -O /opt/jmeter/apache-jmeter-5.0/lib/cmdrunner-2.2.jar http://search.maven.org/remotecontent?filepath=kg/apc/cmdrunner/2.2/cmdrunner-2.2.jar
