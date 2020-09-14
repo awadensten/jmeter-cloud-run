@@ -158,7 +158,7 @@
                     "autoUpgradeMinorVersion": true,
                     "settings": {
                         "fileUris": "[variables('setupScripts')]",
-                        "commandToExecute": "[concat('sudo apt update --assume-yes && sudo apt install default-jre --assume-yes && ', 'bash jmeter-install.sh -mr ', variables('subNodesIpPrefix'), '-', parameters('subNodeCount'), ' -j ', parameters('jarball'), ' -t ', parameters('testpack'))]"
+                        "commandToExecute": "[concat('bash jmeter-install.sh -mr ', variables('subNodesIpPrefix'), '-', parameters('subNodeCount'), ' -j ', parameters('jarball'), ' -t ', parameters('testpack'))]"
                     }
                 },
                 "sub": {
@@ -168,7 +168,7 @@
                     "autoUpgradeMinorVersion": true,
                     "settings": {
                         "fileUris": "[variables('setupScripts')]",
-                        "commandToExecute": "[concat('sudo apt install default-jre --assume-yes && ', 'bash jmeter-install.sh -j ', parameters('jarball'))]"
+                        "commandToExecute": "[concat('bash jmeter-install.sh -j ', parameters('jarball'))]"
                     }
                 }
             }
